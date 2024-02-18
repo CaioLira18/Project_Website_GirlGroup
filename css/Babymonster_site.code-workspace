@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Babymonster_site",
+			"path": ".."
+		},
+		{
+			"name": "imagens",
+			"path": "../../../OneDrive/Documentos/Área de Trabalho/Pastas/Projeto_Site_DC/src/imagens"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Babymonster_site"
+	}
+}

@@ -1,0 +1,453 @@
+
+body{
+    
+    background-color: #000;
+    background-size: cover;
+    
+    z-index: -1;
+    color: #fff;
+}
+
+
+
+
+#background-video {
+   
+    width: 1000px;
+    position:static;
+   
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+
+
+ 
+
+
+.cabecalho{
+    height: 80px; /* Da uma altura max para o cabeçalho*/
+    background-color: #0b0b0b; /* cor de fundo*/
+    display: flex;  /* Coloca os items um do lado do outro*/
+    justify-content: space-between; /* Espaço entre os filhos*/
+    align-items: center; /* Alinhar os itens no centro */
+    padding: 0 80px  0 80px; /* Espaçamento interno de todos os elementos(Sentido Horario), Cima: 0   Direita: 80   Em baixo: 0  Esquerda: 80 */
+    border-bottom: 1px solid #ffffff; /* Adiciona uma borda de 1px*/
+}
+
+.cabecalho .logo{
+    
+    
+   
+   display: flex;  /* Coloca os items um do lado do outro*/
+   gap: 15px; /* Espaçamento de 30 px*/
+    
+    
+}
+
+.cabecalho .logo img{
+    width: 150px;
+   
+}
+
+
+.cabecalho .menu{
+    display: flex; /* Coloca os items um do lado do outro*/
+    gap: 30px; /* Espaçamento de 30 px*/
+}
+
+.cabecalho .menu li a{
+    padding: 30px; /* Espaçamento interno */
+    color: #e8e8e8; /* Cor da Fonte */
+    font-weight:lighter; /* Fonte forte */
+    font-size: 15px; /* Tamanho da fonte*/
+    font-family: "ChaletLondonNineteenSixty"; /* Fonte estilo*/
+    font-weight: bolder;
+}
+
+.cabecalho .menu li a:hover{
+
+    border-bottom: 2px solid #fff; /* Aplica uma borda branco quanto passar o mause em cima dos itens */
+}
+
+.home{
+    display: flex; /* Coloca os items um do lado do outro*/
+    position: relative; /* Adiciona uma posição */
+    min-height: calc(100vh - 80px) ; /* Altura minima */
+
+}
+
+.home::after{
+    background-color: blue; /* Cor de Fundo */
+    content: "";
+    position: absolute; /* absolute: muda o fluxo e tras a imagem pra frente de todos os elementos */
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%); /* Adiciona um efeito de sombra */
+    height: 100%; /* Define uma altura */
+    width: 100%; /* Define uma largura */
+}
+
+.home .imagem-fundo{
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .imagem-fundo{
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes{
+    position: absolute; /* absolute: muda o fluxo e tras a imagem pra frente de todos os elementos */
+    z-index: 1;
+    min-height: calc(100vh - 80px); /* Altura maxima */
+    display: flex; /* Coloca os items um do lado do outro*/
+    flex-direction: column;
+    justify-content: center; /* Centraliza no eixo vertical*/
+    
+    padding: 80px 80px 80px 80px;
+    max-width: 780px;
+}
+
+.home .informacoes h1{
+    font-size: 60px;
+    font-family: "ChaletComprime";
+}
+
+.home .informacoes p{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "ChaletComprime";
+}
+
+.home .informacoes a{
+    font-size: 25px;
+    padding: 15px;
+    letter-spacing: 2px;
+    
+    font-family: "ChaletComprime";
+}
+.members {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover padding padrão */
+
+    text-align: center;
+    overflow: hidden;  
+}
+
+.titulo_membros{
+    text-align: center;
+    background-color: #000;
+    padding: 50px;
+    font-size: 40px;
+    font-family: "ChaletComprime";
+    letter-spacing: 4px;
+    
+}
+
+.members h1{
+    padding: 50px;
+    font-size: 40px;
+    font-family: "ChaletComprime";
+    letter-spacing: 4px;
+}
+
+
+
+.members li {
+    display: inline-block; /* Exibir os itens da lista em linha */
+    justify-content: center; /* Espaçamento entre as imagens */
+    align-items: center;
+    
+    
+    
+}
+
+.members li img{
+   gap: 10px;  /* para que a sombra seja relativa ao container */
+
+}
+
+.members li:last-child {
+    margin-right: 0; /* Remover a margem da última imagem */
+    
+}
+
+.members img {
+    width: 400px; /* Definindo a largura da imagem */
+    /* Mantendo a proporção da imagem */
+    justify-content: center;
+    align-items: center;
+       
+}
+
+.members img:hover{
+    width: 450px;
+    transition: ease-in-out 1s;
+}
+
+.informacoes{
+    text-align: center;
+    
+    
+}
+
+.informacoes h1{
+    font-family: "ChaletComprime";
+    font-size: 80px;
+    padding: 50px;
+    letter-spacing: 4px;
+   
+}
+
+
+
+.informacoes h2{
+    font-family: "ChaletComprime";
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    letter-spacing: 2px;  
+    padding: 20px;
+}
+
+.informacoes img{
+    display:inline-block;
+    margin: 0;
+    width: 1000px;
+    padding: 50px;    
+}
+
+
+
+
+.informacoes_2{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.informacoes_2 h1{
+    font-family: "ChaletComprime";
+    font-size: 80px;
+    padding: 50px;
+    letter-spacing: 4px;
+}
+
+.informacoes_2 video{
+    padding: 30px;
+}
+.informacoes_2 h2{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-family: "ChaletComprime";
+    letter-spacing: 2px; 
+    
+}
+
+.informacoes_2 img{
+    display:inline-block;
+    margin: 0;
+    width: 1000px;
+    padding: 50px;    
+}
+
+
+
+.informacoes_3{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.informacoes_3 h1{
+    font-family: "ChaletComprime";
+    font-size: 80px;
+    padding: 50px;
+    letter-spacing: 4px;
+}
+
+.informacoes_3 video{
+    padding: 40px;
+}
+.informacoes_3 h2{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ChaletComprime";
+    width: 800px;
+    letter-spacing: 2px; 
+    
+    
+}
+
+.informacoes_3 img{
+    display:inline-block;
+    margin: 0;
+    width: 1000px;
+    padding: 50px;    
+}
+
+
+
+
+.informacoes_4{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.informacoes_4 h1{
+    font-family: "ChaletComprime";
+    font-size: 80px;
+    padding: 50px;
+    letter-spacing: 4px;
+}
+
+.informacoes_4 video{
+    padding: 40px;
+}
+.informacoes_4 h2{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ChaletComprime";
+    width: 800px;
+    letter-spacing: 2px; 
+    
+    
+}
+
+.informacoes_4 img{
+    display:inline-block;
+    margin: 0;
+    width: 1000px;
+    padding: 50px;    
+}
+
+
+
+
+
+
+.informacoes_5{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.informacoes_5 h1{
+    font-family: "ChaletComprime";
+    font-size: 80px;
+    padding: 50px;
+    letter-spacing: 4px;
+}
+
+.informacoes_5 video{
+    padding: 40px;
+}
+.informacoes_5 h2{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ChaletComprime";
+    width: 800px;
+    letter-spacing: 2px; 
+    
+    
+}
+
+.informacoes_5 img{
+    display:inline-block;
+    margin: 0;
+    width: 1000px;
+    padding: 50px;    
+}
+
+
+
+
+
+.informacoes_6{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.informacoes_6 h1{
+    font-family: "ChaletComprime";
+    font-size: 80px;
+    padding: 50px;
+    letter-spacing: 4px;
+}
+
+.informacoes_6 video{
+    padding: 40px;
+}
+.informacoes_6 h2{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ChaletComprime";
+    width: 800px;
+    letter-spacing: 2px; 
+    
+    
+}
+
+.informacoes_6 img{
+    display:inline-block;
+    margin: 0;
+    width: 1000px;
+    padding: 50px;    
+}
+
+
+
+
+
+.informacoes_7{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.informacoes_7 h1{
+    font-family: "ChaletComprime";
+    font-size: 80px;
+    padding: 50px;
+    letter-spacing: 4px;
+}
+
+.informacoes_7 video{
+    padding: 40px;
+}
+.informacoes_7 h2{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ChaletComprime";
+    width: 800px;
+    letter-spacing: 2px; 
+    
+    
+}
+
+.informacoes_7 img{
+    display:inline-block;
+    margin: 0;
+    width: 1000px;
+    padding: 50px;    
+}
+
+
+
+
+
+
