@@ -48,6 +48,13 @@ body{
     
 }
 
+.cabecalho .menu li a:hover{
+    font-size: 17px;
+    transition: all 1s;
+    color: rgb(42, 91, 165);
+
+}
+
 .cabecalho .logo img{
     width: 150px;
    

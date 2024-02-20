@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+
+body {
+    background-color: #000000;
+}
+
+.cabecalho{
+    height: 80px; /* Da uma altura max para o cabeçalho*/
+    background-color: #0b0b0b; /* cor de fundo*/
+    display: flex;  /* Coloca os items um do lado do outro*/
+    justify-content: space-between; /* Espaço entre os filhos*/
+    align-items: center; /* Alinhar os itens no centro */
+    padding: 0 80px  0 80px; /* Espaçamento interno de todos os elementos(Sentido Horario), Cima: 0   Direita: 80   Em baixo: 0  Esquerda: 80 */
+    border-bottom: 1px solid #ffffff; /* Adiciona uma borda de 1px*/
+}
+.barra{
+    width: 50px;
+}
+
+
+.cabecalho .logo{
+    
+    
+   
+   display: flex;  /* Coloca os items um do lado do outro*/
+   gap: 15px; /* Espaçamento de 30 px*/
+    
+    
+}
+
+.cabecalho .logo img{
+    width: 150px;
+   
+}
+
+
+.cabecalho .menu{
+    display: flex; /* Coloca os items um do lado do outro*/
+    gap: 30px; /* Espaçamento de 30 px*/
+}
+
+.cabecalho .menu li a{
+    padding: 30px; /* Espaçamento interno */
+    color: #e8e8e8; /* Cor da Fonte */
+    font-weight:lighter; /* Fonte forte */
+    font-size: 15px; /* Tamanho da fonte*/
+    font-family: "ChaletLondonNineteenSixty"; /* Fonte estilo*/
+    font-weight: bolder;
+}
+
+.cabecalho .menu li a:hover{
+    font-size: 17px;
+    transition: all 1s;
+    color: rgb(42, 91, 165);
+
+}
+.background-video {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+.title_text{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "ChaletComprime";
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    margin-top: 50vh ; 
+    position: relative;   
+}
+
+.title_text p{
+    font-family: "ChaletComprime";
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 30px;
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #ffffff;
+    
+    padding-top: 5px;
+}
+
+.description p:hover {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 1.0s ease-out;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('/src/background_song/BatterUp_bg.png');
+}
+.card[for="c2"] {
+    background-image: url('/src/background_song/SITM_bg.png');
+    
+}
+.card[for="c3"] {
+    background-image: url('/src/background_song/newalbum_bg.png');
+}
