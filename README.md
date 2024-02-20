@@ -23,6 +23,6 @@ The project is structured as follows:
 The page includes the following features:
 
 - Display of information about the female musical group.
-- Presentation of group members with photos and biographies. "Future Update"
+- Presentation of group members with photos and biographies.
 - List of future group events. "Future Update"
-Playback of group songs. "Future Update"
+- Playback of group songs. "Future Update"
