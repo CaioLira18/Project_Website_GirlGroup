@@ -7,37 +7,38 @@
     
 }
 
+body{
+    background-color: #000;
+}
 
-body {
-    background-color: #000000;
+.imagem-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Definido para tamanho original */
+    height: auto; /* Definido para tamanho original */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    opacity: 0.3;
 }
 
 .cabecalho{
     height: 80px; /* Da uma altura max para o cabeçalho*/
-    background-color: #0b0b0b; /* cor de fundo*/
+    background-color: #000;
     display: flex;  /* Coloca os items um do lado do outro*/
     justify-content: space-between; /* Espaço entre os filhos*/
     align-items: center; /* Alinhar os itens no centro */
     padding: 0 80px  0 80px; /* Espaçamento interno de todos os elementos(Sentido Horario), Cima: 0   Direita: 80   Em baixo: 0  Esquerda: 80 */
-    border-bottom: 1px solid #ffffff; /* Adiciona uma borda de 1px*/
 }
 
-
 .cabecalho .logo{
-    
-    
-   
    display: flex;  /* Coloca os items um do lado do outro*/
    gap: 15px; /* Espaçamento de 30 px*/
-    
-    
 }
 
 .cabecalho .logo img{
     width: 150px;
    
 }
-
 
 .cabecalho .menu{
     display: flex; /* Coloca os items um do lado do outro*/
@@ -46,31 +47,17 @@ body {
 
 .cabecalho .menu li a{
     padding: 30px; /* Espaçamento interno */
-    color: #e8e8e8; /* Cor da Fonte */
+    color: #ffffff; /* Cor da Fonte */
     font-weight:lighter; /* Fonte forte */
     font-size: 15px; /* Tamanho da fonte*/
     font-family: "ChaletLondonNineteenSixty"; /* Fonte estilo*/
-    font-weight: bolder;
+    transition: 0.5s all ease-in-out;
 }
 
 .cabecalho .menu li a:hover{
-    font-size: 17px;
-    transition: all 1s;
-    color: rgb(42, 91, 165);
-
+    color: #aaaaaa;
+    border-bottom: #ffffff 1px solid;
 }
-.background-video {
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
 
 .title_text{
     color: #ffffff;
@@ -90,6 +77,7 @@ body {
     letter-spacing: 2px;
     margin: 30px;
 }
+
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -99,26 +87,30 @@ body {
 }
 
 .container {
-    height: 400px;
+    height: 700px; /* Altura ajustável */
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Adiciona quebra de linha para os cartões */
     justify-content: start;
+    
 }
 
 .card {
-    width: 80px;
     border-radius: .75rem;
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
     border-radius: 2rem;
-    margin: 0 10px;
+    margin: 0 10px; /* Ajuste de margem horizontal */
     display: flex;
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    flex-shrink: 0; 
 }
 
+.container .card {
+    margin-bottom: 20px; /* Espaçamento entre os cartões */
+}
 .card > .row {
     color: white;
     display: flex;
@@ -149,21 +141,13 @@ body {
     transition: all .3s ease;
 }
 
-.description p {
-    color: #ffffff;
-    
-    padding-top: 5px;
+.card:hover .description {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.description p:hover {
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: bold;
-    transition: all 1.0s ease-out;
-}
-
-.description h4 {
-    text-transform: uppercase;
+.card:hover .description a:hover p {
+    border-bottom: 1px white solid;
 }
 
 input {
@@ -175,7 +159,6 @@ input:checked + label {
 }
 
 input:checked + label .description {
-    opacity: 1 !important;
     transform: translateY(0) !important;
 }
 
@@ -184,8 +167,17 @@ input:checked + label .description {
 }
 .card[for="c2"] {
     background-image: url('/src/background_song/SITM_bg.png');
-    
 }
 .card[for="c3"] {
-    background-image: url('/src/background_song/newalbum_bg.png');
+    background-image: url('/src/background_song/sheshh.jpg');
 }
+.card[for="c4"] {
+    background-image: url('/src/background_song/likethat.jpg');
+}
+.card[for="c5"] {
+    background-image: url('/src/background_song/monster.jpg');
+}
+.card[for="c6"] {
+    background-image: url('/src/background_song/sheshh.jpg');
+}
+

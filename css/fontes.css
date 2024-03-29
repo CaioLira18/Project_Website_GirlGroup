@@ -1,13 +1,19 @@
 @font-face{
     font-family: "ChaletLondonNineteenSixty";
-    src: url("/fontes/ChaletLondonNineteenSixty.ttf")
-    
-    
+    src: url("/fontes/ChaletLondonNineteenSixty.ttf")  
 }
 
 @font-face{
     font-family: "ChaletComprime";
-    src: url("/fontes/ChaletComprime.ttf")
-    
-    
+    src: url("/fontes/ChaletComprime.ttf")   
+}
+
+@font-face{
+    font-family: "BebasNeueRegular";
+    src: url("/fontes/BebasNeue-Regular.ttf")   
+}
+
+@font-face{
+    font-family: "VeryMerryRegular";
+    src: url("/fontes/VeryMerryRegular.ttf");
 }
